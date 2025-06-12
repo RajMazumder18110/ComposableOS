@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+libs = ["lib"]
+
+# Builds
+out = "build/out"
+cache_path = "build/cache"
+
+# Compilers
+optimizer = true
+optimizer_runs = 200
+solc_version = "0.8.27"
+
+# RPC urls
+[rpc_endpoints]
+mainnet = "https://eth.drpc.org"
+bsc = "https://bsc-dataseed.binance.org/"
+sepolia = "https://sepolia.drpc.org"
+bsc_test = "https://data-seed-prebsc-1-s1.binance.org:8545"
+
+# Etherscan
+[etherscan]
+mainnet = { key = "<your api key>", chain = 1 }
+bsc = { key = "<your api key>", chain = 56 }
+sepolia = { key = "<your api key>", chain = 11155111 }
+bsc_test = { key = "<your api key>", chain = 97 }
